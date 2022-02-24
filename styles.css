@@ -1,0 +1,99 @@
+@font-face {
+  font-family: Santana;
+  src: url(fonts/SantanaXtraCondensed.ttf);
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Santana;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+main {
+  margin-top: 2em;
+}
+.flex {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+.alignCenter {
+  align-items: center;
+}
+.justifyCenter {
+  justify-content: center;
+}
+.justifyBetween {
+  justify-content: space-between;
+}
+.containerNav {
+  width: 100%;
+  padding: 0 1.6rem 0 1.6rem;
+}
+header {
+  height: 7.2rem;
+  width: 100%;
+}
+nav {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+  height: 100%;
+}
+.logo {
+  position: relative;
+  height: 55%;
+  overflow: hidden;
+}
+.buttonContainer {
+  height: 4.4rem;
+  width: 4.4rem;
+}
+.menuButton {
+  flex-direction: column;
+  height: 1.4rem;
+}
+.menuButton > div {
+  height: 0.18rem;
+  width: 1.98rem;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.58) !important;
+}
+footer {
+  box-shadow: 0 -1px 3px rgb(0 0 0 / 10%), 0 -2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+  width: 100%;
+  font-size: 2rem;
+  padding: 20px;
+}
+.footer > div {
+  line-height: 4rem;
+}
+.arrow > div {
+  width: 0.7rem;
+}
+.downArrowLeft {
+  content: "";
+  width: 0.2rem;
+  height: 1rem;
+  background-color: black;
+  transform: rotate(315deg);
+}
+.downArrowRight {
+  content: "";
+  width: 0.2rem;
+  height: 1rem;
+  background-color: black;
+  transform: rotate(45deg);
+}
+.footerMenu {
+  color: rgba(0, 0, 0, 0.438);
+}
