@@ -51,6 +51,7 @@ nav {
 .logo {
   position: relative;
   height: 55%;
+  aspect-ratio: 1;
   overflow: hidden;
 }
 .buttonContainer {
@@ -92,6 +93,9 @@ footer {
 }
 .footerMenu {
   color: rgba(0, 0, 0, 0.438);
+  height: 0px;
+  overflow: hidden;
+  transition: all 2s linear;
 }
 .footerSeparator {
   width: 100%;
