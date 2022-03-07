@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", load, false);
 function displayContent(currentlyHiddenValue, spinArrowValue){
   let currentlyHidden = document.getElementById(currentlyHiddenValue);
   let spinArrow = document.getElementById(spinArrowValue);
-  if (currentlyHidden.style.display === "none") {   
+  if (currentlyHidden.style.display === "block") {   
+    spinArrow.style.transform = "rotate(0deg)";
+    currentlyHidden.style.display = "none";
+    } else {
       spinArrow.style.transform = "rotate(-180deg)";
       currentlyHidden.style.display = "block";
-      currentlyHidden.style.height = "250px";
-    } else {
-      spinArrow.style.transform = "rotate(0deg)";
-      currentlyHidden.style.display = "none";
+      currentlyHidden.style.height = "auto";
     }
 }
